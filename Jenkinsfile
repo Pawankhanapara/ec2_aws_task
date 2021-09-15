@@ -5,11 +5,6 @@ pipeline{
     }
     agent any
     stages{
-        stage('git cloning'){
-            steps { 
-              git([url: 'http://gitlab.zymrinc.com/ZDevOps/bash-scripts.git', branch: 'Pawan', credentialsId: 'gitlab'])
-            }
-        }
         stage('Building image') {
             steps{
                 script{
