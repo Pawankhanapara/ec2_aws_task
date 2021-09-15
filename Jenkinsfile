@@ -4,7 +4,7 @@ pipeline{
         dockerImage = ''
     }
     agent any
-   // stages{
+    stages{
      //     stage('Cloning our Git') { 
        //     steps { 
          //     git([url: 'https://github.com/Pawankhanapara/docker.git', branch: 'main', credentialsId: 'github']) }
