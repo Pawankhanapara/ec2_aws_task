@@ -7,7 +7,7 @@ pipeline{
     stages{
           stage('Cloning our Git') { 
             steps { 
-              git([url: 'https://github.com/Pawankhanapara/docker.git', branch: 'main', credentialsId: 'github']) }
+              git([url: 'https://github.com/Pawankhanapara/ec2_aws_task.git', branch: 'main', credentialsId: 'github']) }
         } 
         stage('Building image') {
             steps{
